@@ -14,10 +14,14 @@ function getTime(){
     var minute = date.getMinutes();
     var second = date.getSeconds();
 
-    currentTime.innerHTML = `${year}.${month}.${clockDate}`;
+    //삼항연산자로 0 붙이기
+    currentTime.innerHTML = `${year}.${month <10? `0${month}`:month}.${clockDate}.${week[dateDay]} <br>` 
+    + `${hour <10 ? `0${hour}`:hour}:${minute <10? `0${minute}`:minute}:${second<10? `0${second}`:second}` ;
 }
 
 function init(){
     getTime();
+
+    setInterval(getTime, 1000);
 }
 init();
