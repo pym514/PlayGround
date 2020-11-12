@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    
+</head>
+<body>
+    
+    <header>
+        <div id="logo">
+            <strong><h3><a href="index.html" style="text-decoration: none;">Research & Development Center</a></h3></strong> 
+            
+        </div>
+        <div id ="mainMenu">
+            <ul id ="mainMenu_list">
+                <li>부서원1</li>
+                <li>부서원2</li>
+                <li>부서원3</li>
+                <li>부서원4</li>
+                <li>부서원5</li>
+            </ul>
+        </div>
+    </header>
+    <div class="blank"></div>
+    <section class="section_container">
+            <div class="name">
+                [이름] &nbsp;
+            </div>
+            <div class="work_title">
+                [직책]
+            </div>
+           <!--<div class="work_history">
+                <a href="work_history.html" target="_blank">
+                [History]
+            </a>
+            </div> 
+            <div class="write">
+                <a href="">[작성]</a>
+            </div>-->
+        
+    </section>
+    <section class="data_content">
+       <table>
+        <tr class="table_title">
+            <td>업무명</td>
+            <td>진행률</td>
+            <td>시작일/마감일</td>
+            <td>남은일수  or 지시자</td>
+            <td>업무내용</td>
+        </tr>
+       <tr id="saveData">
+           <!--이곳에 데이터 값을 받아와야함 (id설정 및 append-->
+           <td><a href="#" onclick="window.open('work_content.html', 'writing', 'width=500, height=500, resizable=yes')" >워크시트만들기</a></td>
+           <td id="first"></td>
+           <td></td>
+           <td></td>
+           <td></td>
+       </tr>
+    </table>
+    </section>
+    <div class="write">
+        <a href="#" onclick="window.open('write.html', 'writing', 'width=500, height=500, resizable=yes')">[작성]</a>
+    </div>
+    <div class="blank"></div>
+    <div id="history_content">
+        <div class="history_name">
+        <a href="#" onclick="window.open('work_history.html', 'history', 'width=700, height=600, resizable=yes')" >[History]</a>
+    </div>
+    <section class="history_content">
+        <table id="workTable">
+         <tr class="table_title">
+             <td>업무명</td>
+             <td>변동사항</td> <!-- 인수인계, 업무취소, 없음 등--> 
+             <td>제출된날</td>
+             <td>보고자</td>
+             <td>업무내용</td>
+         </tr>
+        <tr id=savedate>
+            <!--이곳에 데이터 값을 받아와야함 (id설정 및 append-->
+            <td><a href="#" onclick="window.open('work_content.html', 'writing', 'width=500, height=500, resizable=yes')" >워크시트만들기</a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+     </table>
+     </section>
+     <div class="toLogin">
+     <a href="index.html">[로그인페이지]</a>
+    </div>
+</div>
+<script src="index.js"></script>
+
+</body>
+</html>

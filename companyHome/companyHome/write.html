@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>업무내용작성</title>
+    <link href="style.css" rel="stylesheet">
+    <style>
+        body{
+            background-color: #e4e2e2;
+        }
+    </style>
+</head>
+<body>
+    <div id="write_container">
+        <header id="wr_header">[업무내용작성]</header>
+        <hr>
+        <p>
+        <form id="write_form">
+        <input type="text" id="workName" placeholder="업무명을 입력해주세요"><br><br>
+        <textarea placeholder="업무내용을 입력해주세요" class="textarea"></textarea><br><br>
+        시작일: <input type="date"> ~ 마감일: <input type="date"><br><br>
+        작성자: <select>
+            <option>직원1</option>
+            <option>직원2</option>
+            <option>직원3</option>
+            <option>직원4</option>
+            <option>직원5</option>
+        </select>
+    </p>
+</div>
+<div id="wr_button">
+    <input type="reset" value="취소">
+    <input type="submit" value="작성" onclick="">
+</form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

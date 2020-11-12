@@ -1,0 +1,187 @@
+
+header{
+    display: flex;
+}
+
+#logo{
+    width: 25vw;
+    text-align: center;
+    color: black;
+}
+#logo>a:visited{
+    text-decoration: none;
+}
+    
+#mainMenu_list{
+    border: 1px solid #e4e2e2;
+    list-style-type: none;
+    width: 75vw;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    background-color: rgb(50, 110, 189);
+    color: #fff;
+}
+#mainMenu_list>li:hover{
+    background-color: #efefef;
+    color: black;
+    cursor: pointer;
+    border-radius: 35%;
+    font-size: 15px;
+    
+}
+
+.blank{
+    height: 50px;
+}
+#list ul {
+    display: flex;
+    justify-content: space-around;
+}
+#list ul li{
+    list-style-type: none;
+    text-decoration: none;
+}
+.section_container{
+    display: flex;
+    justify-content: left;
+    padding-bottom: 10px;
+}
+.history_name {
+    padding-bottom: 10px;
+}
+.data_content{
+    border: 1px solid black;
+    padding: 1px;
+}
+.write{
+    float: right;
+    margin: 1% 1%;
+}
+tr, td {
+    border: 1px solid grey;
+    width: 100vw;
+    text-align: center;
+}
+.toLogin{
+     float: right;
+    margin: 1% 1%;
+}
+.table_title{
+    background-color: #e4e2e2;
+}
+
+/*-------업무내용작성 CSS ------------*/
+
+#write_container{
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 30px;
+    background-color: #fff;
+}
+#wr_header{
+    display: flex;
+    justify-content: center;
+    
+}
+#wr_button{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.textarea{
+    width: 98%;
+    height: 20vh;
+}
+    
+/*-------히스토리 CSS ------------*/
+#historyMenu_list{
+    border: 1px solid #e4e2e2;
+    list-style-type: none;
+    width: 90vw;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+.history_content{
+    border: 1px solid black;
+    padding: 1px;
+}
+
+/*------------로그인 css -----------*/
+#lg_container{
+    border: 1px solid black;
+    width: 35vw;
+    margin: auto;
+    margin-top: 15%;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+#loginButton{
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: rgb(50, 110, 189);
+    color: white;
+    height: 3vw;;
+
+}
+#joinButton{
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: #fff;
+    color: #000;
+    height: 3vw;;
+
+}
+
+
+
+/*---------- 회원가입 css -------------- */
+#join_container{
+    border: 1px solid black;
+    width: 35vw;
+    margin: auto;
+    margin-top: 15%;
+    background-color: #fff;
+   
+
+}
+#join_title{
+    text-align: center;
+}
+.join_content{
+padding: 0 0 0 20%;
+}
+#typeId, #typePw, #typeTel, #typeAddress{
+    width: 20vw;
+    height: 2vw;;   
+}
+#join_home{
+    width: 20vw;
+    background-color: rgb(137, 185, 137);
+    color: #fff;
+    padding: 3px;
+    margin-bottom: 5px;
+}
+#join_submit{
+    width: 20vw;
+    background-color:  rgb(50, 110, 189);
+    color: #fff;
+    padding: 3px;
+    margin-bottom: 5px;
+
+} 
+#join_reset {
+    width: 20vw;
+    background-color:  rgb(231, 140, 140);
+    color: #fff;
+    padding: 3px;
+    margin-bottom: 5px;
+
+}
