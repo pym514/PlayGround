@@ -4,9 +4,11 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>header</title>
 </head>
 <body>
-
+	<h1 class="title">
+		<a href="/">SHOP</a>
+	</h1>
 </body>
 </html>
