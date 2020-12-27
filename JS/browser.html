@@ -1,24 +1,48 @@
-<button id='btn-add-row'>행 추가하기</button>
-<button id='btn-delete-row'>행 삭제하기</button>
-<hr>
-
-<table id="mytable" border="1" cellspacing="0">
-    <input type="text" id="content" placeholder="input Text"></input>
-    <tr>
-    <th>제목</th>
-    <th>일시</th>
-  </tr>
-  <tbody></tbody>
+<script>
+    function rowAdd() {
+        var trCnt = $('#myTable tr').length;
+        if(trCnt < 11) {
+            var innerHtml = "";
+            innerHtml += '<tr>';
+            innerHtml += '<td>' + trCnt + '</td>';
+            innerHtml += '<td> 내용 <td>';
+            innerHtml += '<td> 기타 <td>';
+            innerHtml += '</tr>';
+                
+            $('#myTable > tbody:last').append(innerHtml);
+        } else {
+            alert("최대 10개까지 가능");
+            return false;
+        }
+    }
+</script>
+<button type="button" class="btn-btn-default" onclick="rowAdd();">항목추가</button>
+<button type="button" class="btn-btn-default" onclick="rowDelete();">항목삭제</button>
+<table id="myTable" class="table" border="1">
+    <thead>
+        <tr class="active">
+            <td class="text-center"><strong>column1</strong></td>
+            <td class="text-center"><strong>column2</strong></td>
+            <td class="text-center"><strong>column3</strong></td>
+        </tr>
+    </thead>
+    <tbody id="tbody">
+        <tr>
+            <td class="text-center">1</td>
+            <td class="text-center">내용</td>
+            <td class="text-center">기타</td>
+        </tr>
+    </tbody>
 </table>
 
-<script src="//code.jquery.com/jquery.min.js"></script>
-<script>
 
-  $('#btn-add-row').click(function() {
-    var time = new Date().toLocaleTimeString();
-    $('#mytable > tbody:last').append('<tr ><td rowspan=3>' + $('#content') + '</td><td>' + time + '</td></tr>');
-  });
-  $('#btn-delete-row').click(function() {
-    $('#mytable > tbody').remove();
-  });
-</script>
+
+
+
+
+
+
+
+
+
+
